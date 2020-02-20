@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.footer {
+  z-index: 3;
+}
+
 // ТУТ ПРОПИСЫВАЕТ СТИЛИ ПОД MOBILE
 
 @media (min-width: 768px) {
