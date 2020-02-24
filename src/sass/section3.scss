@@ -3,20 +3,84 @@
   margin: 0 auto;
 }
 
-// ТУТ ПРОПИСЫВАЕТ СТИЛИ ПОД MOBILE
+.section_wrapper {
+  background: #023b3b;
+  // background-image: url('../images/alien.jpg');
+  background-position: center;
+  background-size: cover;
+  color: wheat;
+}
+
+.section-3 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-3_title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-3_text {
+  text-align: center;
+}
+
+.support {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 190px;
+  margin: 0 auto;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 50%;
+  background: darkblue;
+}
+
+.ico {
+  align-self: center;
+}
+
+.ico img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  width: 292px;
+  height: 218px;
+}
 
 @media (min-width: 768px) {
   .container {
     width: 708px;
+    margin: 0 auto;
   }
 
-  // ТУТ ПРОПИСЫВАЕТ СТИЛИ ПОД TABLET
-}
-
-@media (min-width: 1199px) {
-  .container {
-    width: 1120px;
+  .section-3 {
+    height: 100%;
   }
 
-  // ТУТ ПРОПИСЫВАЕТ СТИЛИ ПОД DESKTOP
+  .section-3_text {
+    width: 540px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  iframe {
+    width: 500px;
+    height: 306px;
+  }
+
+
 }

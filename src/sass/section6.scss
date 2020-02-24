@@ -1,41 +1,42 @@
-// .container {
-//   width: 292px;
-//   margin: 0 auto;
-// }
+.container {
+  width: 292px;
+  margin: 0 auto;
+}
 
-// .section6_wrapper {
-//   background: coral;
+.section6_wrapper {
+  background: rgb(243, 34, 132);
 
-// }
+}
 
-// .section6 {
-//   display: flex;
-//   flex-flow: column;
-//   justify-content: center;
-//   padding-bottom: 100px;
-// }
+.section6 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-bottom: 25px;
+}
 
-// #ConUs {
-//   font-family: 'Raleway', sans-serif;
-//   text-align: center;
-//   text-transform: uppercase;
-//   font-size: 18pt;
-//   overflow: hidden;
-// }
+#ConUs {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  overflow: hidden;
+  margin-top: 40px;
+}
 
-// #ConUs:before,
-// #ConUs:after {
-//   content: "";
-//   display: inline-block;
-//   vertical-align: middle;
-//   box-sizing: border-box;
-//   width: 25%;
-//   height: 1px;
-//   background-color: grey;
-//   border: solid #FFF;
-//   border-width: 0 10px;
-//   position: relative;
-// }
+#ConUs:before,
+#ConUs:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 60px;
+  height: 1px;
+  background-color: white;
+  border: solid rgb(243, 34, 132);
+  border-width: 0 10px;
+  position: relative;
+}
 
 // #ConUs:before {
 //   margin-left: -100%;
@@ -45,111 +46,322 @@
 //   margin-right: -100%;
 // }
 
-// #top {
-//   font-family: 'Raleway', sans-serif;
-//   text-align: center;
-//   font-size: 24pt;
+#s6_top {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-top: 0;
+  color: white;
+}
 
+#s6_low {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15pt;
+  text-align: center;
+  color: #979797;
+  margin-bottom: 42px;
+}
+
+#Contacts {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #bface2;
+  text-align: center;
+}
+
+#line {
+  background-color: grey;
+  width: 100%;
+}
+
+#Template {
+  color: grey;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+  width: 178px;
+}
+
+.s6_input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16pt;
+  border-radius: 4px;
+  border: none;
+  width: 270px;
+  margin-left: 11px;
+}
+
+#submit {
+  font-size: 22pt;
+  background-color: #31d4e7;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  width: 15%;
+  height: 15%;
+}
+
+
+@media (width: 320px) {
+  .s6_btn {
+    display: block;
+    margin: 45px auto;
+    height: 50px;
+    width: 170px;
+    background-color: orange;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .s6_img1 img,
+  .s6_img2 img,
+  .s6_img3 img {
+    left: 10%;
+  }
+}
+
+@media (width: 320px) {
+  .s6_photos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20%;
+    margin-bottom: 40px;
+    // Оно ломало всё тут из-за таблета, поэтому пришлось его менять медиаправилом
+  }
+}
+
+// #s6_photo1 {
+//   margin-top: 11px;
+//   margin-left: 16px;
 // }
 
-// #low {
-//   font-family: 'Open Sans', sans-serif;
-//   font-size: 14pt;
-//   text-align: center;
-//   color: #979797;
+// #s6_photo2 {
+//   margin-top: 13px;
+//   margin-left: 12px;
 // }
 
-// #Contacts {
-//   font-family: 'Open Sans', sans-serif;
-//   font-weight: bold;
-//   color: #bface2;
-//   text-align: center;
+// #s6_photo3 {
+//   margin-top: 10px;
+//   margin-left: 11px;
 // }
 
-// #line {
-//   background-color: grey;
-//   width: 100%;
-// }
+// свойства и значения одинаковы, можно селекторы через "," прописать или
+// вообще всем трем один селектор надо было дать.
+.s6_img1,
+.s6_img2,
+.s6_img3 {
+  width: 42px;
+  height: 42px;
+  background: #3b5997;
+  border-radius: 25%;
+  position: relative;
+  margin: 10px;
+}
 
-// #Template {
-//   color: grey;
-//   font-family: 'Open Sans', sans-serif;
-//   font-size: 14pt;
-//   width: 178px;
-// }
+.s6_img1 img,
+.s6_img2 img,
+.s6_img3 img {
+  position: absolute;
+  bottom: 14%;
+  left: 14%;
+}
 
-// input {
-//   font-family: 'Open Sans', sans-serif;
-//   font-size: 16pt;
-//   border-radius: 4px;
-//   border: none;
-// }
-
-// #submit {
-//   font-size: 22pt;
-//   background-color: #31d4e7;
-//   color: white;
-//   text-align: center;
-//   text-transform: uppercase;
-//   width: 15%;
-//   height: 15%;
-// }
-
-// .s6_btn {
-//   display: block;
-//   margin: 50px auto;
-//   height: 50px;
-//   width: 100px;
-//   background-color: orange;
-//   border: none;
-//   border-radius: 10%;
-//   cursor: pointer;
+// .s6_img2 {
+//   width: 42px;
+//   height: 42px;
+//   background: #3ec2f3;
+//   border-radius: 50%;
 // }
 
 
-// // ТУТ ПРОПИСЫВАЕТ СТИЛИ ПОД MOBILE
-
-// @media (width: 768px) {
-//   .container {
-//     width: 708px;
-//   }
-
-//   .rightside {
-//     height: 200px;
-//     display: block;
-//     margin: 0 auto;
-//   }
-
-// .s6_form {
-//   display: flex;
-//   flex-flow: column wrap;
-//   width: 510px;
-//   margin: 0 auto;
-//   height: 100px;
-// }
-// .s6_input {
-//   width: 250px;
-//   height: 40px;
-//   margin-right: 10px;
-//   display: inline-block;
-//   border: 1px solid black;
-//   // margin-bottom: 20px;
+// .s6_img3 {
+//   width: 42px;
+//   height: 42px;
+//   background: #007ab9;
+//   border-radius: 50%;
 // }
 
-// .s6_form input:first-child {
-//   margin-bottom: 20px;
-// }
+// Пытался в кружёк их взять, не выходит почему-то
 
-// .s6_ta {
-//   width: 250px;
+.s6_form {
+  margin-top: 12px;
+}
 
-// }
-// }
+.s6_input:first-child {
+  margin-bottom: 25px;
+}
 
-// @media (width: 1200px) {
-//   .container {
-//     width: 1120px;
-//   }
+@media (width: 320px) {
+  .s6_ta {
+    margin-top: 28px;
+    width: 270px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+}
 
-//   // ТУТ ПРОПИСЫВАЕТ СТИЛИ ПОД DESKTOP
-// }
+// Оно ломало всё в таблетке, поэтому пришлось его менять медиаправилом
+
+@media (width: 768px) {
+  .container {
+    width: 708px;
+  }
+
+  // .rightside {
+  //   height: 200px;
+  //   display: block;
+  //   margin: 0 auto;
+  // }
+
+  .s6_form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 510px;
+    margin: 0 auto;
+    height: 100px;
+  }
+
+  .s6_input {
+    width: 250px;
+    height: 40px;
+    margin-right: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    // margin-bottom: 20px;
+  }
+
+  // Там на макете по-другому формы сделаны, я решил не переделывать. Если скажете, сделаю.
+
+  .s6_form input:first-child {
+    margin-bottom: 20px;
+  }
+
+  .s6_ta {
+    width: 270px;
+    height: 500px;
+    border-radius: 10px;
+  }
+
+  .s6_btn {
+    display: block;
+    margin: 45px auto;
+    height: 50px;
+    width: 170px;
+    background-color: orange;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .s6_photos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 270px;
+    margin-bottom: 40px;
+  }
+
+  .s6_img1 img,
+  .s6_img2 img,
+  .s6_img3 img {
+    left: 6%;
+  }
+}
+
+@media (width: 1200px) {
+  .container {
+    width: 1120px;
+  }
+
+  .s6_form {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: wrap;
+  }
+
+  .s6_input:first-child {
+    margin: 0;
+    margin-right: 18px;
+  }
+
+  .s6_btn {
+    display: flex;
+    justify-content: flex-end;
+    display: block;
+    margin: 30px 950px 0;
+    height: 50px;
+    width: 170px;
+    background-color: orange;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+
+  }
+
+  .s6_input {
+    height: 43px;
+    width: 270px;
+    margin-bottom: 30px;
+  }
+
+  .s6_ta {
+    width: 570px;
+    height: 178px;
+    border-radius: 10px;
+  }
+
+  .section6 {
+    padding-bottom: 125px;
+  }
+
+  #ConUs {
+    margin-bottom: 40px;
+  }
+
+  .LeftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -29%;
+    // Не знал тут, как по-другому можно
+  }
+
+  .Touch {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .s6_photos {
+    margin: 0;
+    justify-content: flex-start;
+    display: flex;
+  }
+
+  .s6_NumberEmail {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  // на кой эти маргины тут?
+
+  // .s6_img1 {
+  //   margin-right: 15px;
+  // }
+
+  // .s6_img2 {
+  //   margin-right: 15px;
+  // }
+
+  // Вот тут я кароче застрял, минут на 20. Всего лишь надо было поменять текст элайн.
+
+  #Contacts {
+    text-align: left;
+  }
+
+  #s6_top {
+    text-align: left;
+  }
+
+  #s6_low {
+    text-align: left;
+  }
+}
