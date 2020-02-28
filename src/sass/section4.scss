@@ -1,6 +1,5 @@
-.container {
-  width: 292px;
-  margin: 0 auto;
+.s4_wrapper {
+  background: rgb(65, 152, 233);
 }
 
 .section4 {
@@ -178,11 +177,7 @@
   text-align: center;
 }
 
-@media (width: 768px) {
-  .container {
-    width: 708px;
-  }
-
+@media (min-width: 768px) {
   .team__description {
     width: 600px;
   }
@@ -194,11 +189,7 @@
   }
 }
 
-@media (width: 1200px) {
-  .container {
-    width: 1145px;
-  }
-
+@media (min-width: 1200px) {
   .team__description {
     width: 900px;
     font-weight: bold;
